@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.navbar {
+    background-color: #F0FFF1;
+    padding: 1% 0;
+    font-size: 1,2em
+}
+.navbar-brand {
+    min-height: 55px;
+    padding: 0 15px 10px;
+    margin-bottom:10px;
+    margin-top:-10px;
+}
+.navbar-default .navbar-nav li a {
+    color:#5C845C
+}
+.navbar-default .navbar-nav li a:hover {
+    color:#042C04
+}
+.navbar-default .navbar-nav li a:active {
+    color: #FFFFFF
+}
+#home {
+    background: url(../images/bg-1.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width:100%;
+    background-size:cover
+}
+.landing-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle
+}
+.landing-text h1 {
+    font-size: 500%;
+    font-weight: 700
+}
+.padding {
+    padding: 80px 0;
+}
+.padding img{
+    width:100%
+}
+#fixed {
+    background: url(../images/bg-2.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width:100%;
+    background-size:cover
+}
+.icon-images {
+    text-align: center
+}
+.icon-image {
+    max-width: 135px;
+    margin-top:8px
+}
+@media only screen and (max-width: 992px) {
+    .icon-images {
+        display: none;
+    }
+}
+.fa-icons {
+    text-align: center
+}
