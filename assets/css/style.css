@@ -28,7 +28,9 @@ html, body {
     height: 100%;
     position: relative;
     width:100%;
-    background-size:cover
+    background-size:cover;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
 }
 .landing-text {
     display: table-cell;
@@ -51,7 +53,9 @@ html, body {
     height: 100%;
     position: relative;
     width:100%;
-    background-size:cover
+    background-size:cover;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
 }
 .icon-images {
     text-align: center
