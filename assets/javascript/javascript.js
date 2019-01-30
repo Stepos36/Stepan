@@ -77,6 +77,7 @@ $(document).ready(function() {
         },6700)
         }
     if ((mq2.matches)&&(mq2min.matches)) {
+        $('.floatingImg').attr('style', 'max-width:90px;max-height: 90px')
         $(".html5").css("left", $(".html5").position().left).circulate({
             sizeAdjustment: 160,
             speed: 1900,
@@ -147,6 +148,7 @@ $(document).ready(function() {
         },6700)
     }
     if ((mq3.matches)&&(mq3min.matches)) {
+        $('.floatingImg').attr('style', 'max-width:60px;max-height: 60px')
         $(".html5").css("left", $(".html5").position().left).circulate({
             sizeAdjustment: 160,
             speed: 1900,
@@ -217,6 +219,7 @@ $(document).ready(function() {
         },6700)
     }
     if (mq4.matches) {
+        $('.floatingImg').attr('style', 'max-width:60px;max-height: 60px')
         $(".html5").css("left", $(".html5").position().left).circulate({
             sizeAdjustment: 160,
             speed: 1900,
@@ -287,6 +290,7 @@ $(document).ready(function() {
         },6700)
     }
     else{
+        $('.floatingImg').attr('style', 'max-width:100px;max-height: 100px')
 $(".html5").css("left", $(".html5").position().left).circulate({
     sizeAdjustment: 160,
     speed: 1900,

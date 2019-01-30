@@ -98,10 +98,10 @@ html, body {
     position: absolute;
     left:325px
 }
-.floatingImg {
+/* .floatingImg {
     max-width:100px;
     max-height: 100px
-}
+} */
 @media only screen and (max-width: 1198px) {
     .html5 {
         position: absolute;
@@ -167,10 +167,10 @@ html, body {
     .about-me .lead {
         font-size: 15px
     }
-    .floatingImg {
+    /* .floatingImg {
         max-width:90px;
         max-height: 90px
-    }
+    } */
 }
 @media only screen and (max-width: 768px) {
     .icon-images {
@@ -207,10 +207,10 @@ html, body {
     .about-me .lead {
         font-size: 15px
     }
-    .floatingImg {
+    /* .floatingImg {
         max-width:60px;
         max-height: 60px
-    }
+    } */
 }
 @media only screen and (max-width: 571px) {
     .icon-images {
@@ -247,10 +247,10 @@ html, body {
     .about-me .lead {
         font-size: 15px
     }
-    .floatingImg {
+    /* .floatingImg {
         max-width:60px;
         max-height: 60px
-    }
+    } */
 }
 @media only screen and (max-width: 425px) {
     .icon-images {
@@ -287,10 +287,10 @@ html, body {
     .about-me .lead {
         font-size: 15px
     }
-    .floatingImg {
+    /* .floatingImg {
         max-width:60px;
         max-height: 60px
-    }
+    } */
 }
 .fa-icons {
     text-align: center
@@ -299,3 +299,4 @@ html, body {
     #home, #fixed {
         background-attachment:scroll;
     }
+}
