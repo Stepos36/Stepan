@@ -385,4 +385,69 @@ anime.timeline({loop: true})
           return 100 + 30 * i;
         }
       });
+var projects = [    {   name: 'Spice It Up' ,
+                        image: 'assets/images/projects/spice-it-up/spice-it-up.png',
+                        description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
+                        link: 'http://stepos36.github.io/Spice-It'
+                    },
+                    {   name: 'Spice It Up' ,
+                        image: 'assets/images/projects/spice-it-up/spice-it-up.png',
+                        description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
+                        link: 'http://stepos36.github.io/Spice-It'
+                    },
+                    {   name: 'Spice It Up' ,
+                        image: 'assets/images/projects/spice-it-up/spice-it-up.png',
+                        description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
+                        link: 'http://stepos36.github.io/Spice-It'
+                    },
+                    {   name: 'Spice It Up' ,
+                        image: 'assets/images/projects/spice-it-up/spice-it-up.png',
+                        description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
+                        link: 'http://stepos36.github.io/Spice-It'
+                    },
+                    {   name: 'Spice It Up' ,
+                        image: 'assets/images/projects/spice-it-up/spice-it-up.png',
+                        description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
+                        link: 'http://stepos36.github.io/Spice-It'
+                    }
+            ]
+function createPortfolioCard(name, imgSrc, desc) {
+  var cardDiv = $('<div>', { 
+    class: 'card project-card',
+    // style: 'opacity:0' 
+  });
+  var imageDiv = $('<img>', { 
+    class: 'project-image',
+    style: 'width:170px',
+    alt: `${name} image`,
+    src: imgSrc 
+  });
+  var cardBodyDiv = $('<div>', { class: 'card-body' });
+  var nameDiv = $('<div>', { 
+    class: 'project-name text-center',
+    html: `<h3 class="text-truncate">${name}</h3>` 
+  });
+  var descDiv = $('<div>', { 
+    class: 'meal-desc',
+    text: `${desc.substring(0,150)}...` 
+  });
+  
+  cardBodyDiv.append(nameDiv, descDiv);
+  cardDiv.append(imageDiv, cardBodyDiv);
+
+  return cardDiv;
+}
+function createCards() {
+    for (var i = 0; i < projects.length; i++) {
+        var name = projects[i].name;
+        var imgSrc = projects[i].image;
+        var desc = projects[i].description;
+        var cardLink = $('<a>', {
+          href: projects[i].link        
+        });
+        var projectCard = createPortfolioCard(name, imgSrc, desc);
+        $('.projects').append(cardLink.append(projectCard)).attr('style', 'text-align:center; justify-content: center');
+}
+}
+createCards()
 })
