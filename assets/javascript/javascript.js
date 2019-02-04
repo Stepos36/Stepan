@@ -390,25 +390,25 @@ var projects = [    {   name: 'Spice It Up' ,
                         description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
                         link: 'http://stepos36.github.io/Spice-It'
                     },
-                    {   name: 'Spice It Up' ,
-                        image: 'assets/images/projects/spice-it-up/spice-it-up.png',
-                        description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
-                        link: 'http://stepos36.github.io/Spice-It'
+                    {   name: 'Hangman game' ,
+                        image: 'assets/images/projects/word-guess-game/bg-shows.png',
+                        description: 'A basic Hangman Game to check your TV shows knowledge',
+                        link: 'http://stepos36.github.io/Word-Guess-Game'
                     },
-                    {   name: 'Spice It Up' ,
-                        image: 'assets/images/projects/spice-it-up/spice-it-up.png',
-                        description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
-                        link: 'http://stepos36.github.io/Spice-It'
+                    {   name: 'LIRI node application' ,
+                        image: 'assets/images/projects/liri-node-app/liri.png',
+                        description: "LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.",
+                        link: 'https://github.com/Stepos36/liri-node-app'
                     },
-                    {   name: 'Spice It Up' ,
-                        image: 'assets/images/projects/spice-it-up/spice-it-up.png',
-                        description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
-                        link: 'http://stepos36.github.io/Spice-It'
+                    {   name: 'Trivia Game' ,
+                        image: 'assets/images/projects/trivia/trivia.png',
+                        description: 'In this game you get to pick one of 4 different themes and test your knowledge on Cars, TV shows, History or Games.',
+                        link: 'http://stepos36.github.io/TriviaGame'
                     },
-                    {   name: 'Spice It Up' ,
-                        image: 'assets/images/projects/spice-it-up/spice-it-up.png',
-                        description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
-                        link: 'http://stepos36.github.io/Spice-It'
+                    {   name: 'Rock-Paper-Scissors game' ,
+                        image: 'assets/images/projects/rps/icon.png',
+                        description: 'Classic rock-paper-scissors multiplayer game. Enjoy playing it with your friends!',
+                        link: 'http://stepos36.github.io/RPS-Multiplayer'
                     }
             ]
 function createPortfolioCard(name, imgSrc, desc) {
