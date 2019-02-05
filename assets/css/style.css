@@ -48,7 +48,7 @@ html, body {
 .padding img{
     width:100%
 }
-#fixed {
+.fixed {
     background: url(../images/bg-2.jpg) no-repeat center center fixed;
     display: table;
     height: 100%;
