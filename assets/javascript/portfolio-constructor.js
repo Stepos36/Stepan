@@ -95,8 +95,7 @@ function createPortfolioCard(name, imgSrc, desc) {
             hH = $('.projects').outerHeight(),
             wH = $(window).height(),
             wS = $(this).scrollTop();
-        if ((wS < (hT+hH-wH+300))&&(wS > (hT+hH-wH-275))){
-            console.log('hi')
+        if ((wS < (hT+hH-wH+300))&&(wS > (hT+hH-wH-400))){
                var results = anime({
                    targets:'.project-card',
                    opacity: [1],
@@ -104,7 +103,6 @@ function createPortfolioCard(name, imgSrc, desc) {
                    })
                 }
         else {
-            console.log('hi')
                var results = anime({
                    targets:'.project-card',
                    opacity: [0],
