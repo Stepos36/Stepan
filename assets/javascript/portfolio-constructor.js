@@ -1,29 +1,10 @@
-$('#projects').on('scroll', function() {
-$('.floatIn').each(function(){
-    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-  });
-anime.timeline({loop: true})
-  .add({
-    targets: '.floatIn .letter',
-    translateX: [40,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 6200,
-    delay: function(el, i) {
-      return 500 + 30 * i;
-    }
-    }).add({
-        targets: '.floatIn .letter',
-        translateX: [0,-30],
-        opacity: [1,0],
-        easing: "easeInExpo",
-        duration: 6200,
-        delay: function(el, i) {
-          return 100 + 30 * i;
-        }
-      });
-    })
+var mq1 = window.matchMedia( "(max-width: 1198px)" );
+var mq1min = window.matchMedia( "(min-width: 993px)" );
+var mq2 = window.matchMedia( "(max-width: 992px)" );
+var mq2min = window.matchMedia( "(min-width: 769px)" );
+var mq3 = window.matchMedia( "(max-width: 768px)" );
+var mq3min = window.matchMedia( "(min-width: 571px)" );
+var mq4 = window.matchMedia( "(max-width: 570px)" );
 var projects = [    {   name: 'Spice It Up' ,
                         image: 'assets/images/projects/spice-it-up/spice-it-up.png',
                         description: 'This app allows the user to search different ingredients and obtain recipes. Along with recipes, the user is able to search required ingredients on Amazon Fresh. With this information the user can easily order the ingredients and have a spicy meal.',
@@ -89,6 +70,30 @@ function createPortfolioCard(name, imgSrc, desc) {
             }            
     }
   $(document).ready(function(){
+    $('.floatIn').each(function(){
+        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+      });
+    anime.timeline({loop: true})
+      .add({
+        targets: '.floatIn .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 6200,
+        delay: function(el, i) {
+          return 500 + 30 * i;
+        }
+        }).add({
+            targets: '.floatIn .letter',
+            translateX: [0,-30],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 6200,
+            delay: function(el, i) {
+              return 100 + 30 * i;
+            }
+            });
     createCards()
     $(window).scroll(function() {
         var hT = $('.projects').offset().top,
@@ -110,4 +115,70 @@ function createPortfolioCard(name, imgSrc, desc) {
                    })
                 }
      });
-  })    
+  if ((mq1.matches)&&(mq2min.matches)) {
+    $(window).scroll(function() {
+        var hT = $('.projects').offset().top,
+            hH = $('.projects').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if ((wS < (hT+hH-wH+200))&&(wS > (hT+hH-wH-700))){
+               var results = anime({
+                   targets:'.project-card',
+                   opacity: [1],
+                   duration: 7000,
+                   })
+                }
+        else {
+               var results = anime({
+                   targets:'.project-card',
+                   opacity: [0],
+                   duration: 7000,
+                   })
+                }
+     });
+  }
+  if ((mq3.matches)&&(mq3min.matches)) {
+    $(window).scroll(function() {
+        var hT = $('.projects').offset().top,
+            hH = $('.projects').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if ((wS < (hT+hH-wH+200))&&(wS > (hT+hH-wH-1100))){
+               var results = anime({
+                   targets:'.project-card',
+                   opacity: [1],
+                   duration: 7000,
+                   })
+                }
+        else {
+               var results = anime({
+                   targets:'.project-card',
+                   opacity: [0],
+                   duration: 7000,
+                   })
+                }
+     });
+  }
+  if (mq4.matches) {
+    $(window).scroll(function() {
+        var hT = $('.projects').offset().top,
+            hH = $('.projects').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if ((wS < (hT+hH-wH+200))&&(wS > (hT+hH-wH-2000))){
+               var results = anime({
+                   targets:'.project-card',
+                   opacity: [1],
+                   duration: 7000,
+                   })
+                }
+        else {
+               var results = anime({
+                   targets:'.project-card',
+                   opacity: [0],
+                   duration: 7000,
+                   })
+                }
+     });
+  }
+}) 

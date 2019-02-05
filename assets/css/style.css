@@ -244,7 +244,10 @@ html, body {
     .about-me .lead {
         font-size: 15px
     }
-
+    .floatIn {
+        font-weight: 400;
+        font-size: 2.8em;
+    }
 }
 @media only screen and (max-width: 571px) {
     .icon-images {
@@ -281,7 +284,10 @@ html, body {
     .about-me .lead {
         font-size: 15px
     }
-
+    .floatIn {
+        font-weight: 300;
+        font-size: 1.8em;
+    }
 }
 @media only screen and (max-width: 425px) {
     .icon-images {
@@ -318,7 +324,10 @@ html, body {
     .about-me .lead {
         font-size: 15px
     }
-
+    .floatIn {
+        font-weight: 600;
+        font-size: 1.6em;
+    }
 }
 .fa-icons {
     text-align: center
