@@ -63,6 +63,7 @@ function createPortfolioCard(name, imgSrc, desc) {
           var imgSrc = projects[i].image;
           var desc = projects[i].description;
           var cardLink = $('<a>', {
+              target: '_blank',
             href: projects[i].link        
           });
           var projectCard = createPortfolioCard(name, imgSrc, desc);
@@ -100,7 +101,7 @@ function createPortfolioCard(name, imgSrc, desc) {
             hH = $('.projects').outerHeight(),
             wH = $(window).height(),
             wS = $(this).scrollTop();
-        if ((wS < (hT+hH-wH+300))&&(wS > (hT+hH-wH-400))){
+        if ((wS < (hT+hH-wH+300))&&(wS > (hT+hH-wH-700))){
                var results = anime({
                    targets:'.project-card',
                    opacity: [1],
@@ -115,13 +116,35 @@ function createPortfolioCard(name, imgSrc, desc) {
                    })
                 }
      });
-  if ((mq1.matches)&&(mq2min.matches)) {
+  if ((mq1.matches)&&(mq1min.matches)) {
     $(window).scroll(function() {
         var hT = $('.projects').offset().top,
             hH = $('.projects').outerHeight(),
             wH = $(window).height(),
             wS = $(this).scrollTop();
-        if ((wS < (hT+hH-wH+200))&&(wS > (hT+hH-wH-700))){
+        if ((wS < (hT+hH-wH+350))&&(wS > (hT+hH-wH-700))){
+               var results = anime({
+                   targets:'.project-card',
+                   opacity: [1],
+                   duration: 7000,
+                   })
+                }
+        else {
+               var results = anime({
+                   targets:'.project-card',
+                   opacity: [0],
+                   duration: 7000,
+                   })
+                }
+     });
+  }
+  if ((mq2.matches)&&(mq2min.matches)) {
+    $(window).scroll(function() {
+        var hT = $('.projects').offset().top,
+            hH = $('.projects').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if ((wS < (hT+hH-wH+350))&&(wS > (hT+hH-wH-1200))){
                var results = anime({
                    targets:'.project-card',
                    opacity: [1],
@@ -143,7 +166,7 @@ function createPortfolioCard(name, imgSrc, desc) {
             hH = $('.projects').outerHeight(),
             wH = $(window).height(),
             wS = $(this).scrollTop();
-        if ((wS < (hT+hH-wH+200))&&(wS > (hT+hH-wH-1100))){
+        if ((wS < (hT+hH-wH+400))&&(wS > (hT+hH-wH-1200))){
                var results = anime({
                    targets:'.project-card',
                    opacity: [1],
@@ -165,7 +188,7 @@ function createPortfolioCard(name, imgSrc, desc) {
             hH = $('.projects').outerHeight(),
             wH = $(window).height(),
             wS = $(this).scrollTop();
-        if ((wS < (hT+hH-wH+200))&&(wS > (hT+hH-wH-2000))){
+        if ((wS < (hT+hH-wH+200))&&(wS > (hT+hH-wH-2050))){
                var results = anime({
                    targets:'.project-card',
                    opacity: [1],
