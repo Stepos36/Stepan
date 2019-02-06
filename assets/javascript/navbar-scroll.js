@@ -26,6 +26,16 @@ $(document).ready(function(){
     target: '#mainNav',
     offset: 56
   });
+  $(document).on('focus', '.explore', function() {
+    anime({
+        targets: '.explore',
+        rotate: {
+          value: 720,
+          duration: 1000,
+          easing: 'easeInOutSine'
+        },
+      });
+  })
 
 })(jQuery); // End of use strict
 })
