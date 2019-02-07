@@ -2,6 +2,12 @@ html, body {
     height: 100%;
     width: 100%;
 }
+button:focus {
+    outline: none
+}
+.massive {
+    font-weight: 400 !important
+}
 .navbar {
     background-color: black;
     padding: 0.3% 0;
@@ -25,6 +31,10 @@ html, body {
 }
 .nav-link:hover {
     color: rgb(196,255,248) !important
+}
+.navbar-toggler-icon {
+    color:white !important;
+    background-image: url(../images/toggler.png) !important
 }
 #home {
     background: url(../images/bg-1.png) no-repeat center center fixed;
