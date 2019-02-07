@@ -18,7 +18,7 @@ html, body {
     text-align: center
 }
 #home {
-    background: url(../images/bg-1.jpg) no-repeat center center fixed;
+    background: url(../images/bg-1.png) no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -247,6 +247,9 @@ html, body {
     }
 }
 @media only screen and (max-width: 571px) {
+    #home {
+        background: url(../images/bg-1-1.png) no-repeat center center fixed;
+    }
     .icon-images {
         display: none;
     }
@@ -325,12 +328,14 @@ html, body {
         font-weight: 600;
         font-size: 1.6em;
     }
+    #home, #fixed {
+        background-attachment:scroll;
+    }
 }
 .fa-icons {
     text-align: center
 }
+
 @media only screen and (max-width: 425px) {
-    #home, #fixed {
-        background-attachment:scroll;
-    }
+    
 }
